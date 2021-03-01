@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/cocktail">Races</router-link> |
-      <router-link to="/ingredient">Classes</router-link> |
-       <router-link to="/cocktailingredient">Armor</router-link> |
-      <router-link to="/measure">Weapons</router-link> 
+      <router-link to="/cocktails">cocktails</router-link> |
+      <router-link to="/ingredients">ingredient</router-link> |
+       <router-link to="/cocktailingredient">cocktail Ingredient</router-link> |
+      <router-link to="/measure">measures</router-link> 
     </div>
     <router-view/>
   </div>
