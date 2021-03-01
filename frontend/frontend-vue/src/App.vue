@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/cocktail">Races</router-link> |
+      <router-link to="/ingredient">Classes</router-link> |
+       <router-link to="/cocktailingredient">Armor</router-link> |
+      <router-link to="/measure">Weapons</router-link> 
     </div>
     <router-view/>
   </div>
@@ -18,7 +20,13 @@
 }
 
 #nav {
-  padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    margin-right: 35%;
+    margin-left: 25%;
+    margin-bottom: 3em;
 }
 
 #nav a {
@@ -27,6 +35,5 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #5b7eb8;
 }
-</style>
