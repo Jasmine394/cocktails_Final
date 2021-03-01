@@ -12,17 +12,17 @@
               <tr>
                   <th>#</th>
                   <th>Name</th>
-                  <th>instructions</th>
-                  <th>thumb</th>
+                  <th>Instructions</th>
+                  <th>Image</th>
                 </tr>
             </thead>
 
             <tbody>
-                <tr v-for="cocktail in actors" :key="cocktail.id">
+                <tr v-for="cocktail in cocktails" :key="cocktail.id">
                 <td>{{cocktail.id}}</td>
-                <td>{{cocktail.Name}} {{cocktail.Name}}</td>
-                <td>{{cocktail.thumb}} {{cocktail.thumb}}</td>
-                <td>{{cocktail.thumb}} {{cocktail.thumb}}</td>
+                <td>{{cocktail.Name}} </td>
+                <td>{{cocktail.instructions}} {{cocktail.instructions}}</td>
+                <td>{{cocktail.thumb}}</td>
               </tr>
             </tbody>
         </table>
@@ -34,7 +34,7 @@
 export default {
   name: 'Cocktails',
   data: () => ({
-    actors: []
+    cocktails: []
   }),
   async mounted(){
     console.log('Cocktails mounted being')

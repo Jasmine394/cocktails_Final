@@ -19,6 +19,11 @@ const routes = [
     component: () => import( '../views/Cocktails.vue')
   },
   {
+    path: '/cocktail/add',
+    name: 'AddCocktail',
+    component: () => import ('../views/AddCocktail.vue')
+  },
+  {
     path: '/ingredient',
     name: 'ingredients',
     component: () => import ('../views/ingredients.vue')
@@ -33,6 +38,11 @@ const routes = [
     path: '/cocktailingredient',
     name: 'Cocktailingredient',
     component: () => import('../views/Cocktailingredient.vue')
+  },
+  {
+    path: '/measure',
+    name: 'Meausre',
+    component: () => import('../views/Measure.vue')
   }
 
 ]
