@@ -26,14 +26,9 @@ const routes = [
   {
     path: '/ingredient',
     name: 'ingredients',
-    component: () => import ('../views/ingredients.vue')
+    component: () => import ('../views/ingredient.vue')
   },
-  {
-    path: '/ingredient/:id',
-    name: 'ingredients',
-    component: () => import ('../views/IngredientDetail.vue')
-  },
-  
+ 
   {
     path: '/cocktailingredient',
     name: 'Cocktailingredient',
