@@ -1,4 +1,4 @@
-package com.aim.backend.cocktails_Final.cocktails;
+package com.aim.cocktails.cocktails_Final.cocktail;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
