@@ -58,7 +58,7 @@ export default {
 }
 
 .button:hover {
-    background-color: green;
+    background-color: skyblue;
     color: white;
 }
 

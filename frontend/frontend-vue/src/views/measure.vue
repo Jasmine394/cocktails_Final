@@ -50,11 +50,7 @@ export default {
 .title{
     color: purple;  
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .title {
     text-align: center;
