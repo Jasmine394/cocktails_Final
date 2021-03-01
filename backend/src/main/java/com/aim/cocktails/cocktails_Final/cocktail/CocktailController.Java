@@ -24,6 +24,16 @@ public class CocktailController {
     public Iterable<Cocktail> getAllCocktails() {
         return cocktailRepository.findAll();
     }
+    @GetMapping(path = "/{id}")
+    public Cocktail getCocktail(@PathVariable(value = "id") Integer id) {
+        Optional<Cocktail> cocktail = cocktailRepository.findById(id);
+        return cocktail.get();
+    }
+
+    @PostMapping(path = "/")
+    public Cocktail createCocktail(@RequestBody Cocktail cocktail) {
+        return cocktailRepository.save(cocktail);
+    }
     
     @PutMapping(path = "/{id}")
     public @ResponseBody String updateCocktail(@PathVariable(value = "id") Integer id,
