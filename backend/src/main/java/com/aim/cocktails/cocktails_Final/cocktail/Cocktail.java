@@ -1,5 +1,7 @@
 package com.aim.cocktails.cocktails_Final.cocktail;
 
+import java.configuration.updateBuildConfiguration;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
