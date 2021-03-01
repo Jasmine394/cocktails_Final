@@ -42,18 +42,17 @@
 export default {
     name: 'AddCocktail',
     data: () => ({
-        armor: {
-            type: "",
+        cocktiail: {
+             id: "",
             name: "",
-            classNumber: "",
-            modifier: "",
-            weight: ""
+            instructions: "",
+            drink_thumb: ""
         }
     }),
     methods: {
         async save() {
             console.log('AddCocktail.save() cocktail=', this.cocktail)
-            const response = await this.$http.post('http://localhost:8080/api/cocktail/', this.cocktiail);
+            const response = await this.$http.post('http://localhost:8080/api/cocktails', this.cocktiail);
             console.log('AddCocktail.save() response=', response);
             this.$router.push({path: '/cocktails'})
         }, 
@@ -61,7 +60,7 @@ export default {
             this.$router.push({path: '/cocktails'})
         }, 
         async getCocktail() {
-            const data = await this.$http.get('http://localhost:8080/api/cocktail');
+            const data = await this.$http.get('http://localhost:8080/api/cocktails');
             console.log('getCocktails data', data)
             return data;
         }

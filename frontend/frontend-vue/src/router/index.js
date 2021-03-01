@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/cocktail',
+    path: '/cocktails',
     name: 'Cocktails',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -24,9 +24,9 @@ const routes = [
     component: () => import ('../views/AddCocktail.vue')
   },
   {
-    path: '/ingredient',
-    name: 'ingredients',
-    component: () => import ('../views/ingredient.vue')
+    path: '/ingredients',
+    name: 'Ingredients',
+    component: () => import ('../views/Ingredient.vue')
   },
  
   {

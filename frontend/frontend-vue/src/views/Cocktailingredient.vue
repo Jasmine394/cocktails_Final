@@ -41,9 +41,9 @@ export default {
     
     async mounted() {
         console.log('cocktailingrediet mounted being')
-        const{data} = await this.$http.get('http://localhost:8080/api/ingredient');
-        console.log('ingredient mounted data', data)
-        this.ingredient = data;
+        const{data} = await this.$http.get('http://localhost:8080/api/cocktailingredient');
+        console.log('cocktailingredient mounted data', data)
+        this.cocktailingredient = data;
     }
 }
 </script>
