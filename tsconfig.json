@@ -1,7 +1,6 @@
 {
     "include": [
-    "./src/**/*"
-  ],
+    "./src/**/*"],
   "compilerOptions": {
     "module": "es2015",
     "moduleResolution": "node",
