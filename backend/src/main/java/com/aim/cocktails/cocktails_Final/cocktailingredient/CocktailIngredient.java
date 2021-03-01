@@ -3,10 +3,14 @@ package com.aim.cocktails.cocktails_Final.cocktailingredient;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import com.aim.cocktails.cocktails_Final.cocktail.Cocktail;
+import com.aim.cocktails.cocktails_Final.ingredient.Ingredient;
 
 @Entity
 @Table(name = "cocktailingredient")

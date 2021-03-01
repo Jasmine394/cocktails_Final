@@ -1,12 +1,12 @@
 package com.aim.cocktails.cocktails_Final.cocktail;
 
-
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +24,7 @@ public class CocktailController {
     public Iterable<Cocktail> getAllCocktails() {
         return cocktailRepository.findAll();
     }
+
     @GetMapping(path = "/{id}")
     public Cocktail getCocktail(@PathVariable(value = "id") Integer id) {
         Optional<Cocktail> cocktail = cocktailRepository.findById(id);
@@ -34,14 +35,14 @@ public class CocktailController {
     public Cocktail createCocktail(@RequestBody Cocktail cocktail) {
         return cocktailRepository.save(cocktail);
     }
-    
+
     @PutMapping(path = "/{id}")
     public @ResponseBody String updateCocktail(@PathVariable(value = "id") Integer id,
-           @RequestBody Cocktail cocktailDetails) {
+            @RequestBody Cocktail cocktailDetails) {
 
         Optional<Cocktail> optionalCocktail = cocktailRepository.findById(id);
         Cocktail cocktail = optionalCocktail.get();
-        
+
         cocktail.setCocktail_name(cocktailDetails.getCocktail_name());
         cocktail.setInstructions(cocktailDetails.getInstructions());
         cocktail.setDrink_thumb(cocktailDetails.getDrink_thumb());
@@ -49,8 +50,8 @@ public class CocktailController {
         cocktailRepository.save(cocktailDetails);
         return "Updated";
 
-
     }
+
     @DeleteMapping(path = "/{id}")
     public @ResponseBody String deleteCocktail(@PathVariable(value = "id") Integer id) {
         cocktailRepository.deleteById(id);

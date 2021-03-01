@@ -16,7 +16,7 @@ public class MeasureController {
     private MeasureRespository measureRespository;
 
     @GetMapping(path = "")
-    public Interable<Measure> getAllMeasure() {
+    public Iterable<Measure> getAllMeasure() {
         return measureRespository.findAll();
     }
 

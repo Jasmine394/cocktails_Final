@@ -1,3 +1,4 @@
+
 package com.aim.cocktails.cocktails_Final.ingredient;
 
 import java.util.Optional;
@@ -18,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IngredientController {
 
     @Autowired
-    private IngredientRespository ingredientRespository;
+    private IngredientRepository ingredientRespository;
 
     @GetMapping(path = "")
     public Iterable<Ingredient> getAllIngredient() {
@@ -26,8 +27,9 @@ public class IngredientController {
     }
 
     @GetMapping(value = "/{id}")
-    public Ingredient getIngredient(@PathVariable(value = "id") Interger id) {
+    public Ingredient getIngredient(@PathVariable(value = "id") Integer id) {
         Optional<Ingredient> ingredient = ingredientRespository.findById(id);
+        return ingredient.get();
 
     }
 
@@ -52,7 +54,7 @@ public class IngredientController {
     }
 
     @DeleteMapping(path = "/{id}")
-    public @RequestBody String deleteIngredient(@PathVariable(value = "id") Integer id) {
+    public @ResponseBody String deleteIngredient(@PathVariable(value = "id") Integer id) {
         ingredientRespository.deleteById(id);
         return "Deleted";
 
