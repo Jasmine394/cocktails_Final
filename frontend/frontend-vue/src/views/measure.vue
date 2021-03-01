@@ -35,7 +35,7 @@
 export default {
     name: "Measure",
     data: () => ({
-        measure:[]
+        measures:[]
     }),
     async mounted() {
         console.log('measure mounted being')

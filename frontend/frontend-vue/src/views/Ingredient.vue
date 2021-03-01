@@ -2,7 +2,7 @@
     <div class="main">
         <div class="header">
             <h1 class="title">Ingredients</h1>
-            <img class="ingredient" alt="ingredient" src="../assets/.png">
+            
         </div>
 
          
@@ -17,7 +17,7 @@
                 </thead>
                 <tbody>
                     <tr v-for="ingredient in ingredients" :key="ingredient.id">
-                        <td><a @click="ingredientDetail(ingredient.id)">{{ingredient.name}}</a></td>
+                        <td>{{ingredient.name}}</td>
                         <td>{{ingredient.category}}</td>
                     </tr>
                 </tbody>
@@ -29,7 +29,7 @@
 <script>
 export default {
     data: () => ({
-       ingredient:{},
+       ingredients:{},
     }),
 
     methods: {

@@ -35,7 +35,7 @@
 export default {
     name: "Cocktailingredient",
     data: () => ({
-        cocktailingredient:[],
+        cocktailingredients:[],
     }),
     
     
