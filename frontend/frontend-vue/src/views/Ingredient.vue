@@ -36,9 +36,9 @@ export default {
 
     async mounted() {
         console.log('ingredients being mounted')
-        const{data} = await this.$http.get('http://localhost:8080/api/ingredients');
+        const{data} = await this.$http.get('http://localhost:8080/api/ingredient');
         console.log('ingredients mounted data', data)
-        this.ingredients = data;
+        this.ingredient = data;
     }
 }
 </script>

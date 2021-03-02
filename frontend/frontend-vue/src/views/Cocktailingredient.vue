@@ -38,7 +38,7 @@ export default {
         console.log('cocktailingrediet mounted being')
         const{data} = await this.$http.get('http://localhost:8080/api/cocktailingredient');
         console.log('cocktailingredient mounted data', data)
-        this.cocktailingredients = data;
+        this.cocktailingredient = data;
     }
 }
 </script>
