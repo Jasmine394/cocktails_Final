@@ -17,11 +17,7 @@
                 </thead>
 
                 <tbody>
-                    <tr v-for="player in players" :key="player.id">
-                        <td>{{player.playerName}}</td>
-                        <td>{{player.characterName}}</td>
-                        <td>{{player.races.name}}</td>
-   
+                    
                       
                         
                     </tr>
