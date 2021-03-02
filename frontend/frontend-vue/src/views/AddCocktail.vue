@@ -61,7 +61,7 @@ export default {
         }, 
         async getCocktail() {
             const data = await this.$http.get('http://localhost:8080/api/cocktails');
-            console.log('getCocktails data', data)
+            console.log('getCocktail data', data)
             return data;
         }
     }

@@ -28,15 +28,11 @@
 
 <script>
 export default {
-    data: () => ({
-       ingredients:{},
+    name: 'Ingredient',
+    data:  () => ({
+       ingredients:[]
     }),
 
-    methods: {
-        ingredientDetail(ingredientId){
-            this.$router.push('ingredient/' + ingredientId);
-        }
-    },
 
     async mounted() {
         console.log('ingredients being mounted')
