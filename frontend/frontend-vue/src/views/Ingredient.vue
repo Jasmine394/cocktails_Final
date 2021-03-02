@@ -53,5 +53,8 @@ export default {
 .title {
     text-align: center;
 }
+.table {
+    background-color: darkcyan;
 
+}
 </style>

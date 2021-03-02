@@ -4,7 +4,7 @@
     <h1 class="title"> Cocktails</h1>
   </div>
 
-  <router-link to="/cocktail" tag="button" class="button is-primary">Add Cocktail</router-link>
+  <router-link to="/cocktails" tag="button" class="button is-primary">Add Cocktail</router-link>
 
     <div class="content">
         <table id="cocktails" class="table">
@@ -49,6 +49,10 @@ export default {
 <style scoped>
 button{
   float: right;
+}
+.table {
+    background-color: darkcyan;
+
 }
 
 </style>

@@ -65,10 +65,9 @@ export default {
 .title{
     color: darkblue;  
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.table {
+    background-color: darkcyan;
+
 }
 
 .title {

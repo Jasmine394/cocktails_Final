@@ -88,5 +88,9 @@ export default {
 .title {
     color: black;
 }
+.table {
+    background-color: darkcyan;
+
+}
 
 </style>

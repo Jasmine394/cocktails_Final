@@ -55,6 +55,10 @@ export default {
 .title {
     text-align: center;
 }
+.table {
+    background-color: darkcyan;
+
+}
 
 p {
     font-style: italic;
