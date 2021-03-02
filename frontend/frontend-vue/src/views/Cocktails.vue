@@ -21,7 +21,7 @@
                 <tr v-for="cocktail in cocktails" :key="cocktail.id">
                 <td>{{cocktail.id}}</td>
                 <td>{{cocktail.Name}} </td>
-                <td>{{cocktail.instructions}} {{cocktail.instructions}}</td>
+                <td>{{cocktail.instructions}} </td>
                 <td>{{cocktail.thumb}}</td>
               </tr>
             </tbody>
@@ -40,7 +40,7 @@ export default {
     console.log('Cocktails mounted being')
     const{ data } = await this.$http.get('http://localhost:8080/api/cocktails');
     console.log('Cocktails mounted data', data)
-    this.cocktail = data;
+    this.cocktails = data;
   }
 
 }
